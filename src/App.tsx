@@ -13,18 +13,18 @@ function App() {
       id: 1,
       title: "Adventure Works Analysis",
       description: "Power BI dashboard for AdventureWorks including KPIs summary, sales report, product report and breakdown by territory and country.",
-      preview: "/src/assets/project-2-preview-full.png" ,
+      preview: "/assets/project-2-preview-full.png",
       fallback: "📊",
-      pdfFile: "/src/assets/Adventure Works.pdf",
+      pdfFile: "/assets/Adventure Works.pdf",
       skills: ["Power BI", "DAX", "Data Visualization"]
     },
     {
       id: 2,
       title: "Vancouver Weather Station Analysis",
       description: "Analysis of weather data from one Vancouver weather station, including data exploration, cleaning, transformation and statistical analysis. Tools used: Excel, R studio, Python.",
-      preview: "/src/assets/project-1-preview.png",
+      preview: "/assets/project-1-preview.png",
       fallback: "🌡️",
-      pdfFile: "/src/assets/Vancouver Weather Station Data - Analysis.pdf",
+      pdfFile: "/assets/Vancouver Weather Station Data - Analysis.pdf",
       skills: ["Python", "R", "Excel", "Statistical Analysis", "Data Cleaning"]
     }
   ]
@@ -47,9 +47,13 @@ function App() {
       <header className="header">
         <div className="profile-section">
           <img 
-            src="/src/assets/main_picture.jpg" 
+            src="/assets/main_picture.jpg" 
             alt="Dinara Salikhadenova" 
             className="profile-image"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDE1MCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiByeD0iNzUiIGZpbGw9InVybCgjZ3JhZGllbnQpIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzY2N2VlYTtzdG9wLW9wYWNpdHk6MSIgLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojNzY0YmEyO3N0b3Atb3BhY2l0eToxIiAvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjx0ZXh0IHg9Ijc1IiB5PSI4NSIgZm9udC1mYW1pbHk9IkludGVyLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQ4IiBmb250LXdlaWdodD0iNzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+RDwvdGV4dD4KPC9zdmc+';
+            }}
           />
           <div className="profile-info">
             <h1>Dinara Salikhadenova</h1>
