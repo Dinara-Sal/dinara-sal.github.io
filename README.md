@@ -1,3 +1,13 @@
+# Dinara Salikhadenova - Data Analyst Portfolio
+
+## 🌐 Live Site
+**Visit the portfolio:** [https://dinara-sal.github.io](https://dinara-sal.github.io)
+
+This is a modern, responsive portfolio website showcasing data analysis projects and skills.
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
